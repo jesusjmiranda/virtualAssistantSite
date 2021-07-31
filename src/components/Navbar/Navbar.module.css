@@ -4,7 +4,7 @@
     height: 100px;
     display: flex;
     width: 80vw;
-    min-width: 670px;
+    min-width: 804px;
     max-width: 1250px;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@
         display: none;
     }
     .navbar {
-        width: 90vw;
-        min-width: 300px;
+        width: 100vw;
+        min-width: 150px;
     }
 }

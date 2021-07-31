@@ -10,7 +10,7 @@
 
 :root {
   --primary: white;
-  --scaffold: 0px solid pink;
+  --scaffold: 2px solid pink;
 }
 
 body {
