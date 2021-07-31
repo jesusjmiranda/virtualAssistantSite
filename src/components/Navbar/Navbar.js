@@ -3,6 +3,7 @@ import MenuTitle from "./MenuTitle/MenuTitle";
 import MenuItem from "./MenuItem/MenuItem";
 import styles from "./Navbar.module.css";
 import BurgerMenu from "../BurgerMenu/BurgerMenu"
+import IconComponent from '../IconComponent/IconComponent'
 
 const Navbar = () => {
 
@@ -17,6 +18,7 @@ const Navbar = () => {
   }
 
   return (
+    <>
     <nav className={styles.navbar}>
       <MenuTitle text={"Secretarias a Distancia"}/>
       <div className={styles.menuItemContainer}>
@@ -26,6 +28,8 @@ const Navbar = () => {
       </div>
       <BurgerMenu onClick={onClickHandler} />
     </nav>
+    <IconComponent />
+    </>
   );
 };
 

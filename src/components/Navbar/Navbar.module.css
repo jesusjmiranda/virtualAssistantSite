@@ -23,7 +23,9 @@
         display: none;
     }
     .navbar {
+        margin-left: 10px;
         width: 100vw;
         min-width: 150px;
+        max-width: 95%;
     }
 }
