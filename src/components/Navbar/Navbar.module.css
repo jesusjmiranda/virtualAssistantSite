@@ -1,0 +1,29 @@
+.navbar {
+    background-color: rgb(40,44,52);
+    color: white;
+    height: 100px;
+    display: flex;
+    width: 80vw;
+    min-width: 670px;
+    max-width: 1250px;
+    justify-content: space-between;
+    align-items: center;
+    border: var(--scaffold);
+    margin-top: 20px;
+}
+
+.menuItemContainer{
+    height: 60px;
+    margin-right: 40px;
+    border: var(--scaffold);
+}
+
+@media (max-width: 620px) {
+    .menuItemContainer {
+        display: none;
+    }
+    .navbar {
+        width: 90vw;
+        min-width: 300px;
+    }
+}

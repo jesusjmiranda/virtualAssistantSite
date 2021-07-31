@@ -1,0 +1,70 @@
+.menuBtn {
+    display: none;
+}
+:root {
+    --burger-width: 40px;
+    --line-height: 2px;
+}
+
+@media (max-width: 620px) {
+    .menuBtn {
+        position: relative;
+        height: 45px;
+        width: var(--burger-width);
+        border: var(--scaffold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 25px;
+        cursor: pointer;
+        margin: 0px;
+        margin-right: 13px;
+        margin-left: 20px;
+        padding: 0px;
+    }
+
+    .menuBtnBurger {
+        position: relative;
+        width: var(--burger-width);
+        height: var(--line-height);
+        background: white;
+        border-radius: 5px;
+    }
+
+    .menuBtnBurger::before,
+    .menuBtnBurger::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: var(--burger-width);
+        height: var(--line-height);
+        background: white;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .menuBtnBurger::before {
+        transform: translateY(-13px);
+    }
+
+    .menuBtnBurger::after {
+        transform: translateY(13px)
+    }
+
+    /* ANIMATION */
+    .menuBtn.open .menuBtnBurger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menuBtn.open .menuBtnBurger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menuBtn.open .menuBtnBurger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+}

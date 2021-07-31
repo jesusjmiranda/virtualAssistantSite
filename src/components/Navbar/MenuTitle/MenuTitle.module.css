@@ -1,0 +1,18 @@
+.menuTitle {
+    height: 60px;
+    width: 150px;
+    min-width: 200px;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-size: 30px;
+    line-height: 60px;
+    text-decoration: none;
+    color: inherit;
+    border: var(--scaffold);
+}
+
+@media (max-width: 620px) {
+    .menuTitle {
+        margin-left: 20px;
+    }
+}

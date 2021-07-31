@@ -1,0 +1,15 @@
+.menuItem {
+    height: 60px;
+    max-height: 60px;
+    width: 90px;
+    max-width: 90px;
+    line-height: 60px;
+    text-decoration: white;
+    color: inherit;
+    padding: 20px;
+    border: var(--scaffold);
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
