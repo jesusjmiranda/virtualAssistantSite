@@ -27,7 +27,7 @@
         position: relative;
         width: var(--burger-width);
         height: var(--line-height);
-        background: white;
+        background: black;
         border-radius: 5px;
     }
 
@@ -38,7 +38,7 @@
         left: 0px;
         width: var(--burger-width);
         height: var(--line-height);
-        background: white;
+        background: black;
         border-radius: 5px;
         transition: all .5s ease-in-out;
         align-self: center;

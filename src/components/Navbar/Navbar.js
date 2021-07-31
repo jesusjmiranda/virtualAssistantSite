@@ -18,10 +18,9 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <MenuTitle text={"Jesús Miranda"}/>
+      <MenuTitle text={"Secretarias a Distancia"}/>
       <div className={styles.menuItemContainer}>
         <MenuItem text={"About"} path={"/about"} />
-        <MenuItem text={"Projects"} path={"/projects"} />
         <MenuItem text={"Résumé"} path={"/resume"} />
         <MenuItem text={"Contact"} path={"/contact"} />
       </div>
