@@ -3,7 +3,7 @@
 }
 :root {
     --burger-width: 40px;
-    --line-height: 2px;
+    --line-height: 1px;
 }
 
 @media (max-width: 620px) {

@@ -1,4 +1,5 @@
 import { Route } from "react-router-dom";
+import Home from './pages/Home'
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
@@ -15,6 +16,9 @@ const App = () => {
         </div>
       </header>
       <main className={classes.app_main}>
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route path="/about">
           <About />
         </Route>
