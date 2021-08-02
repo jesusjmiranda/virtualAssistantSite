@@ -9,6 +9,8 @@ const MenuItem = (props) => {
       activeClassName={styles.active}
       className={styles.menuItem}
       to={props.path}
+      exact
+      strict
     >
       {props.text}
     </NavLink>

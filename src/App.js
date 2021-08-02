@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from './pages/Home'
 import About from "./pages/About";
 import Resume from "./pages/Resume";
@@ -16,18 +16,20 @@ const App = () => {
         </div>
       </header>
       <main className={classes.app_main}>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/resume">
-          <Resume />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/resume">
+            <Resume />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
       </main>
     </div>
   );
