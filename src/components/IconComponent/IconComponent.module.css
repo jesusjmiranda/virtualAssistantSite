@@ -1,6 +1,9 @@
 .IconComponent {
     border: var(--scaffold);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .MainLogo {
@@ -12,6 +15,17 @@
     .IconComponent {
         bottom: 40px;
         border: var(--scaffold);
-        max-width: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .MainLogo {
+        position: relative;
+        width: 500px;
+        justify-self: center;
+        align-self: center;
+        max-width: 95%;
+        min-width: 400px;
     }
 }

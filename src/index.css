@@ -10,7 +10,7 @@
 
 :root {
   --primary: white;
-  --scaffold: 1px solid pink;
+  --scaffold: 0px solid pink;
 }
 
 body {
@@ -20,7 +20,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +29,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: relative;
 }
 
 .html {
