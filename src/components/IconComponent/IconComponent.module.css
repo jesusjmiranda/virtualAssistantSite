@@ -1,4 +1,11 @@
 .IconComponent {
     border: var(--scaffold);
     background-color: lightblue ;
+    position: relative;
+}
+
+.MainLogo {
+    position: relative;
+    height: 200px;
+    width: 200px;
 }
