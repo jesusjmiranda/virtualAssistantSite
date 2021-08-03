@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     border: var(--scaffold);
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .menuItemContainer{
@@ -29,12 +29,12 @@
     .navbar {
         margin-left: 10px;
         width: 100vw;
-        min-width: 150px;
+        min-width: 90%;
         max-width: 95%;
     }
     .mobileTitle {
         font-family: 'Lovers Quarrel', cursive;
-        font-size: 80px;
+        font-size: 72px;
         display: inline;
         bottom: 40px;
     }
