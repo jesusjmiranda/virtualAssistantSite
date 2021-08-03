@@ -11,5 +11,7 @@
 @media (max-width: 620px) {
     .IconComponent {
         bottom: 40px;
+        border: var(--scaffold);
+        max-width: 90%;
     }
 }

@@ -5,6 +5,8 @@
   position: relative;
   height: 100%;
   width: 100%;
+  border: var(--scaffold);
+  max-width: 100vh;
 }
 
 .App-logo {
@@ -35,13 +37,4 @@
 
 .app_main {
   background-color: red;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
