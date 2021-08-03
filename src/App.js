@@ -1,7 +1,6 @@
 import { Route, Switch } from "react-router-dom";
-import Home from './pages/Home'
 import About from "./pages/About";
-import Resume from "./pages/Resume";
+import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 
 import Navbar from "./components/Navbar/Navbar";
@@ -17,14 +16,11 @@ const App = () => {
       </header>
       <main className={classes.app_main}>
         <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route exact path="/about">
+          <Route path="/about">
             <About />
           </Route>
-          <Route exact path="/resume">
-            <Resume />
+          <Route path="/services">
+            <Services />
           </Route>
           <Route path="/contact">
             <Contact />
