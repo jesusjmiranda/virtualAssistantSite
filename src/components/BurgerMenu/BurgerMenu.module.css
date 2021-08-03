@@ -9,7 +9,7 @@
 @media (max-width: 620px) {
     .menuBtn {
         position: relative;
-        height: 45px;
+        height: 35px;
         width: var(--burger-width);
         border: var(--scaffold);
         display: flex;
@@ -21,6 +21,7 @@
         margin-right: 13px;
         margin-left: 20px;
         padding: 0px;
+        bottom: 30px;
     }
 
     .menuBtnBurger {
@@ -46,11 +47,11 @@
     }
 
     .menuBtnBurger::before {
-        transform: translateY(-13px);
+        transform: translateY(-10px);
     }
 
     .menuBtnBurger::after {
-        transform: translateY(13px)
+        transform: translateY(10px)
     }
 
     /* ANIMATION */

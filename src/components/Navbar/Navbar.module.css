@@ -18,6 +18,10 @@
     border: var(--scaffold);
 }
 
+.mobileTitle {
+    
+}
+
 @media (max-width: 620px) {
     .menuItemContainer {
         display: none;

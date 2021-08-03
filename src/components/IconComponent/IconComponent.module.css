@@ -1,11 +1,15 @@
 .IconComponent {
     border: var(--scaffold);
-    background-color: lightblue ;
     position: relative;
 }
 
 .MainLogo {
     position: relative;
-    height: 200px;
-    width: 200px;
+    width: 500px;
+}
+
+@media (max-width: 620px) {
+    .IconComponent {
+        bottom: 40px;
+    }
 }

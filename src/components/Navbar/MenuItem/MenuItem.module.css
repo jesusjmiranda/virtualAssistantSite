@@ -8,6 +8,8 @@
     color: inherit;
     padding: 20px;
     border: var(--scaffold);
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 35px;
 }
 
 .active {
