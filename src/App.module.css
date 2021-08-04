@@ -5,8 +5,18 @@
   height: 100%;
   width: 100%;
   border: var(--scaffold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app_main {
-  background-color: purple;
+  background-color: blue;
+  width: 100vw;
+
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
 }

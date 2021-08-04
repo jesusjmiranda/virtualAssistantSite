@@ -1,0 +1,8 @@
+.ContentBanner {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--scaffold);
+    min-width: 100vw;
+}
