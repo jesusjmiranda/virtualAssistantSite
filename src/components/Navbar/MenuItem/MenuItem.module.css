@@ -1,17 +1,18 @@
 .menuItem {
-    height: 60px;
+    height: 20px;
     max-height: 60px;
     width: 90px;
     max-width: 90px;
     line-height: 60px;
     text-decoration: white;
     color: inherit;
-    padding: 20px;
+    padding: 5px;
+    margin: 15px;
     border: var(--scaffold);
     font-family: 'Lovers Quarrel', cursive;
     font-size: 35px;
 }
 
 .active {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
