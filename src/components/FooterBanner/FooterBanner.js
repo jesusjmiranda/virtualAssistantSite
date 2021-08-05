@@ -10,10 +10,10 @@ const FooterBanner = (props) => {
       <div className={styles.FooterBanner}>
         <div className={styles.Links}>
           {/*LINKS HERE*/}
-          <MenuItem text={"Home"} path={"/"} />
-          <MenuItem text={"About"} path={"/about"} />
-          <MenuItem text={"Services"} path={"/services"} />
-          <MenuItem text={"Contact"} path={"/contact"} />
+          <MenuItem className={styles.MenuItem} text={"Home"} path={"/"} />
+          <MenuItem className={styles.MenuItem} text={"About"} path={"/about"} />
+          <MenuItem className={styles.MenuItem} text={"Services"} path={"/services"} />
+          <MenuItem className={styles.MenuItem} text={"Contact"} path={"/contact"} />
         </div>
         <div className={styles.IconContainer}><FaMailBulk className={styles.icon}/><FaFacebook className={styles.icon}/><FaInstagram className={styles.icon}/></div>
         <div className={styles.Trademark}>© VIRTUAL NIVIA CREATIVE INC. </div>

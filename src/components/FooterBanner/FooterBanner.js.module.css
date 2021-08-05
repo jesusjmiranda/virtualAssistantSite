@@ -17,10 +17,13 @@
     display: flex;
     justify-content: space-around;
     margin: 15px;
+    width: 500px;
+    justify-self: center;
+    align-self: center;
 }
 
 .icon:hover {
-    color: rgb(255, 138, 157);
+    color: rgb(208,108,105)
 }
 
 .Trademark {
@@ -32,5 +35,7 @@
     .Links {
         max-width: 100%;
     }
-    
+    .IconContainer {
+        width: 225px;
+    }
 }
