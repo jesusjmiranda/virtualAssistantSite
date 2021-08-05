@@ -3,7 +3,7 @@ import styles from '../pages/Home.module.css'
 
 const Home = () => {
     return (
-    <ContentBanner color={'lightblue'}>
+    <ContentBanner color={'rgb(230, 120, 90)'}>
         <div className={styles.CenterEverything}>
 
         </div>

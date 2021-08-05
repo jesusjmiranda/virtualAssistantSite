@@ -1,9 +1,36 @@
 .FooterBanner {
-    height: 28vh;
+    height: 22vh;
     background-color: lightpurple;
     border: var(--scaffold);
     width: 100%;   
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
+    margin-top: 20px;
+}
+
+.IconContainer {
+    border: var(--scaffold);
+    display: flex;
+    font-size: 50px;
+    color: rgb(0, 93, 0);
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.icon:hover {
+    color: rgb(255, 138, 157);
+}
+
+.Trademark {
+    border: var(--scaffold);
+    margin: 15px;
+}
+
+@media (max-width: 620px) {
+    .Links {
+        max-width: 100%;
+    }
+    
 }
