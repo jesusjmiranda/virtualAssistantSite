@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 
 import Navbar from "./components/Navbar/Navbar";
 import classes from "./App.module.css";
+import FooterBanner from "./components/FooterBanner/FooterBanner";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           </Route>
         </Switch>
       </main>
+      <FooterBanner />
     </div>
   );
 };

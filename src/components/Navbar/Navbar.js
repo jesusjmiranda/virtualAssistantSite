@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <MenuTitle text={"Secretarias a Distancia"}/>
       <div className={styles.menuItemContainer}>
-        <MenuItem text="Home" path={"/"} />
+        <MenuItem text={"Home"} path={"/"} />
         <MenuItem text={"About"} path={"/about"} />
         <MenuItem text={"Services"} path={"/services"} />
         <MenuItem text={"Contact"} path={"/contact"} />

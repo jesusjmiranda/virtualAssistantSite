@@ -1,0 +1,9 @@
+.FooterBanner {
+    height: 28vh;
+    background-color: lightpurple;
+    border: var(--scaffold);
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
