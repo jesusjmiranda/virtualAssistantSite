@@ -1,14 +1,14 @@
-import ContentBanner from '../components/UI/ContentBanner/ContentBanner'
-import styles from '../pages/Home.module.css'
+import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
+import styles from "../pages/Home.module.css";
 
 const Home = () => {
-    return (
-    <ContentBanner color={'rgb(211,140,126)'}>
-        <div className={styles.CenterEverything}>
+  return (
+    <>
+      <ContentBanner color={"rgb(211,140,126)"}></ContentBanner>
+      <ContentBanner color={"white"}></ContentBanner>
+      <ContentBanner color={"rgb(211,140,126)"}></ContentBanner>
+    </>
+  );
+};
 
-        </div>
-    </ContentBanner>
-    )
-}
-
-export default Home
+export default Home;

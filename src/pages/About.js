@@ -1,9 +1,13 @@
-const About = () => {
-    return (
-        <div>
-            About page
-        </div>
-    )
-}
+import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
 
-export default About
+const About = () => {
+  return (
+    <div>
+      <ContentBanner color={"rgb(211,140,126)"}></ContentBanner>
+      <ContentBanner color={"white"}></ContentBanner>
+      <ContentBanner color={"rgb(211,140,126)"}></ContentBanner>
+    </div>
+  );
+};
+
+export default About;
