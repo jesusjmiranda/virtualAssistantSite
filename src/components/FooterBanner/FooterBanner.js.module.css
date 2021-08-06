@@ -1,5 +1,4 @@
 .FooterBanner {
-    height: 22vh;
     background-color: lightpurple;
     border: var(--scaffold);
     width: 100%;   
@@ -15,11 +14,11 @@
     border: var(--scaffold);
     display: flex;
     font-size: 50px;
-    color: rgb(0, 93, 0);
+    color: rgb(78, 88, 78);
     display: flex;
     justify-content: space-around;
     margin: 15px;
-    width: 500px;
+    width: 490px;
     justify-self: center;
     align-self: center;
 }
@@ -33,11 +32,17 @@
     margin: 15px;
 }
 
+.Links {
+    display: flex;
+    align-self: center;
+}
+
 @media (max-width: 620px) {
     .Links {
         max-width: 100%;
+        flex-direction: column;
     }
     .IconContainer {
-        width: 225px;
+        width: 220px;
     }
 }

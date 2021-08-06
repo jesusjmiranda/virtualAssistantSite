@@ -1,5 +1,4 @@
 import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
-import styles from "../pages/Home.module.css";
 
 const Home = () => {
   return (

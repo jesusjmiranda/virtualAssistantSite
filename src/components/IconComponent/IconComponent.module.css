@@ -9,7 +9,7 @@
 
 .MainLogo {
     position: relative;
-    width: 500px;
+    width: 500px
 }
 
 @media (max-width: 620px) {
@@ -27,6 +27,5 @@
         justify-self: center;
         align-self: center;
         max-width: 95%;
-        min-width: 400px;
     }
 }
