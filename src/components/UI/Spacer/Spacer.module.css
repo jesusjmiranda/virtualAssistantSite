@@ -1,0 +1,7 @@
+.Spacer {
+    align-self: center;
+    height: 6px;
+    width: 90px;
+    background-color: rgb(136, 76, 27);
+    bottom: 25px;
+}

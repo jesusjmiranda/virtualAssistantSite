@@ -1,0 +1,19 @@
+.simpleText {
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-top: 40px;
+}
+
+.mediumText {
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    color: white;
+}
+
+.complexText {
+    font-family: 'WindSong', cursive;
+    font-size: 70px;
+    color: white;
+    bottom: 25px;
+}

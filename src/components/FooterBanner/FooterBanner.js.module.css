@@ -24,7 +24,7 @@
 }
 
 .icon:hover {
-    color: rgb(208,108,105)
+    color: rgb(214, 126, 123)
 }
 
 .Trademark {
@@ -35,6 +35,7 @@
 .Links {
     display: flex;
     align-self: center;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 620px) {
