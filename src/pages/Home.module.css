@@ -17,3 +17,24 @@
     color: white;
     bottom: 25px;
 }
+
+.firstParagraph {
+    max-width: 80%;
+    font-size: 24px;
+    font-family: 'Karla', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.secondParagraph {
+    max-width: 80%;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 80px;
+}
+
+.italicizedText {
+    font-style: italic;
+    font-family: 'Karla', sans-serif;
+}
