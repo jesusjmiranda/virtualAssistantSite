@@ -26,64 +26,61 @@ const Services = () => {
           ></img>
           <div className={styles.ServiceContent}>
             <p className={styles.ServiceTitle}>VIRTUAL ASSISTANT SERVICES</p>
-            <div className={styles.ServicePoint}>▵ CRM Database Management</div>
-            <div className={styles.ServicePoint}>▵ Invoicing</div>
-            <div className={styles.ServicePoint}>▵ PDF/Document Creation</div>
-            <div className={styles.ServicePoint}>▵ Calendar Management</div>
-            <div className={styles.ServicePoint}>▵ Client Onboarding</div>
+            <div className={styles.ServicePoints}>
+              <div className={styles.ServicePoint}>
+                ▵ CRM Database Management
+              </div>
+              <div className={styles.ServicePoint}>▵ Invoicing</div>
+              <div className={styles.ServicePoint}>▵ PDF/Document Creation</div>
+              <div className={styles.ServicePoint}>▵ Calendar Management</div>
+              <div className={styles.ServicePoint}>▵ Client Onboarding</div>
+            </div>
           </div>
         </ServiceBanner>
         <ServiceBanner flip={true}>
           <img
             src={secondImage}
             className={styles.Image}
-            alt={"green branch over notebook"}
+            alt={"Clean simple wooden desk"}
           ></img>
           <div className={styles.ServiceContent}>
             <p className={styles.ServiceTitle}>SOCIAL MEDIA SUPPORT</p>
-            <div className={styles.ServicePoint}>▵ Graphics Creation</div>
-            <div className={styles.ServicePoint}>▵ Pre-Scheduling Posts</div>
-            <div className={styles.ServicePoint}>
-              ▵ Management of a custom content calendar
-            </div>
-            <div className={styles.ServicePoint}>
-              ▵ Posting at optimal times
-            </div>
-            <div className={styles.ServicePoint}>
-            ▵  Optimizing post for image, links and copy
-            </div>
-            <div className={styles.ServicePoint}>
-            ▵  Monitoring/Tracking
+            <div className={styles.ServicePoints}>
+              <div className={styles.ServicePoint}>▵ Graphics Creation</div>
+              <div className={styles.ServicePoint}>▵ Pre-Scheduling Posts</div>
+              <div className={styles.ServicePoint}>▵ Calendar management</div>
+              <div className={styles.ServicePoint}>
+                ▵ Posting at optimal times
+              </div>
+              <div className={styles.ServicePoint}>
+                ▵ Optimizing posts for success
+              </div>
+              <div className={styles.ServicePoint}>▵ Monitoring/Tracking</div>
             </div>
           </div>
         </ServiceBanner>
-        <ServiceBanner>
+        <ServiceBanner >
           <img
             src={thirdImage}
             className={styles.Image}
-            alt={"green branch over notebook"}
+            alt={"laptop on orange sofa"}
           ></img>
           <div className={styles.ServiceContent}>
             <p className={styles.ServiceTitle}>TECH AND CREATIVE SUPPORT</p>
-            <div className={styles.ServicePoint}>
-            ▵  Slideshow preparation
+            <div className={styles.ServicePoints}>
+              <div className={styles.ServicePoint}>▵ Slideshow preparation</div>
+              <div className={styles.ServicePoint}>
+                ▵ Website (Squarespace) Maintenance
+              </div>
+              <div className={styles.ServicePoint}>
+                ▵ Lead Pages and Sales Pages Creation
+              </div>
+              <div className={styles.ServicePoint}>▵ Webinar Setup</div>
+              <div className={styles.ServicePoint}>
+                ▵ Online Booking & Scheduling System
+              </div>
+              <div className={styles.ServicePoint}>▵ Email Marketing</div>
             </div>
-            <div className={styles.ServicePoint}>
-            ▵  Website (Squarespace) Maintenance
-            </div>
-            <div className={styles.ServicePoint}>
-            ▵  Lead Pages and Sales Pages Creation
-            </div>
-            <div className={styles.ServicePoint}>
-            ▵  Webinar Setup 
-            </div>
-            <div className={styles.ServicePoint}>
-            ▵  Online Booking & Scheduling System 
-            </div>
-            <div className={styles.ServicePoint}>
-            ▵  Email Marketing 
-            </div>
-
           </div>
         </ServiceBanner>
       </ContentBanner>

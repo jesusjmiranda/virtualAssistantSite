@@ -46,4 +46,13 @@
     font-family: 'Karla', sans-serif;
     font-size: 21px;
     border: var(--scaffold);
+    display: flex;
+    align-self: flex-start;
 }
+
+.ServicePoints {
+    border: var(--scaffold);
+    width: 371px;
+    margin-left: 20px;
+}
+
