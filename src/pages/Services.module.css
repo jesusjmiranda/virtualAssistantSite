@@ -1,0 +1,20 @@
+.firstBannerTextTitle {
+    font-size: 80px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.firstBannerText {
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.firstBannerTextTwo {
+    font-size: 70px;
+    font-family: 'WindSong', cursive;
+    color: white;
+    margin-bottom: 40px;
+}
