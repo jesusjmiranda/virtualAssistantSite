@@ -72,3 +72,29 @@
     font-family: 'WindSong', cursive;
     font-size: 60px;
 }
+
+.thirdBannerTitle {
+    align-self: flex-start;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: rgb(131,139,97);
+}
+
+.ServicesContainer {
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 620px) {
+    .ServicesContainer {
+        flex-direction: column;
+        align-content: center;
+    }
+}

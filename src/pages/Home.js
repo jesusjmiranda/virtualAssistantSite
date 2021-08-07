@@ -1,7 +1,11 @@
 import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
+import { GoDeviceDesktop } from "react-icons/go";
+import { GoRepo } from "react-icons/go";
+import { BsFillPeopleFill } from "react-icons/bs";
 import Button from "../components/UI/Button/Button";
 import styles from "./Home.module.css";
 import Spacer from "../components/UI/Spacer/Spacer";
+import ProvidedService from "../components/ProvidedService/ProvidedService";
 
 const Home = () => {
   return (
@@ -62,8 +66,31 @@ const Home = () => {
 
         <Spacer color={"rgb(168,194,199)"} width={160} />
       </ContentBanner>
-      <ContentBanner color={"rgb(211,140,126)"}>
+      <ContentBanner color={"rgb(237,231,229)"}>
         <div className={styles.thirdBannerTitle}>THIS IS HOW I CAN HELP...</div>
+        <div className={styles.ServicesContainer}>
+          <ProvidedService
+            icon={<GoRepo />}
+            title={"VIRTUAL ASSISTANT SERVICES"}
+            details={
+              "Need someone you can trust to help you with your invoicing, onboarding new clients, formatting a document or preparing for your next presentation? I’m your person!"
+            }
+          />
+          <ProvidedService
+            icon={<BsFillPeopleFill />}
+            title={"SOCIAL MEDIA SUPPORT"}
+            details={
+              "Let’s set up a strategy so you can show up consistently and authentically on the social media platforms with the biggest impact, increasing your visibility and engagement."
+            }
+          />
+          <ProvidedService
+            icon={<GoDeviceDesktop />}
+            title={"TECH & CREATIVE SUPPORT"}
+            details={
+              "Ready to look into automating your processes? Don’t have a clue how to make your graphics and documents look good and appealing? Or maybe you have an amazing idea for your next program/presentation but you’re having trouble with the technology you need to bring your vision to life? Let me help! "
+            }
+          />
+        </div>
       </ContentBanner>
     </>
   );
