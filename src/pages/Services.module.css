@@ -3,6 +3,7 @@
     font-family: 'Karla', sans-serif;
     color: white;
     margin-bottom: 20px;
+    border: var(--scaffold);
 }
 
 .firstBannerText {
@@ -10,6 +11,7 @@
     font-family: 'Karla', sans-serif;
     color: white;
     margin-bottom: 2px;
+    border: var(--scaffold);
 }
 
 .firstBannerTextTwo {
@@ -18,4 +20,30 @@
     color: white;
     margin-top: 20px;
     margin-bottom: 40px;
+    border: var(--scaffold);
+}
+
+.ServiceTitle {
+    font-size: 32px;
+    font-family: 'Karla', sans-serif;
+    color: darkslategray;
+    border: var(--scaffold);
+}
+
+.Image {
+    width: 300px;
+    height: 300px;
+    border: var(--scaffold);
+}
+
+.ServiceTitle {
+    margin: 20px;
+    border: var(--scaffold);
+    margin-top: 0px;
+}
+
+.ServicePoint {
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    border: var(--scaffold);
 }

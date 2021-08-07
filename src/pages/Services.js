@@ -18,22 +18,74 @@ const Services = () => {
         <Spacer color={"rgb(246,195,168)"} width={180} />
       </ContentBanner>
       <ContentBanner color={"white"}>
-        <ServiceBanner
-          image={firstImage}
-          altText={"Bound notebook with simple grass overtop"}
-          title={"SOMETHING HERE"}
-        />
-        <ServiceBanner
-          image={secondImage}
-          altText={"Phone taking photo of a well-organized desk"}
-          flip={true}
-          title={"SOMETHING HERE"}
-        />
-        <ServiceBanner
-          image={thirdImage}
-          altText={"Bound notebook with simple grass overtop"}
-          title={"SOMETHING HERE"}
-        />
+        <ServiceBanner>
+          <img
+            src={firstImage}
+            className={styles.Image}
+            alt={"green branch over notebook"}
+          ></img>
+          <div className={styles.ServiceContent}>
+            <p className={styles.ServiceTitle}>VIRTUAL ASSISTANT SERVICES</p>
+            <div className={styles.ServicePoint}>▵ CRM Database Management</div>
+            <div className={styles.ServicePoint}>▵ Invoicing</div>
+            <div className={styles.ServicePoint}>▵ PDF/Document Creation</div>
+            <div className={styles.ServicePoint}>▵ Calendar Management</div>
+            <div className={styles.ServicePoint}>▵ Client Onboarding</div>
+          </div>
+        </ServiceBanner>
+        <ServiceBanner flip={true}>
+          <img
+            src={secondImage}
+            className={styles.Image}
+            alt={"green branch over notebook"}
+          ></img>
+          <div className={styles.ServiceContent}>
+            <p className={styles.ServiceTitle}>SOCIAL MEDIA SUPPORT</p>
+            <div className={styles.ServicePoint}>▵ Graphics Creation</div>
+            <div className={styles.ServicePoint}>▵ Pre-Scheduling Posts</div>
+            <div className={styles.ServicePoint}>
+              ▵ Management of a custom content calendar
+            </div>
+            <div className={styles.ServicePoint}>
+              ▵ Posting at optimal times
+            </div>
+            <div className={styles.ServicePoint}>
+            ▵  Optimizing post for image, links and copy
+            </div>
+            <div className={styles.ServicePoint}>
+            ▵  Monitoring/Tracking
+            </div>
+          </div>
+        </ServiceBanner>
+        <ServiceBanner>
+          <img
+            src={thirdImage}
+            className={styles.Image}
+            alt={"green branch over notebook"}
+          ></img>
+          <div className={styles.ServiceContent}>
+            <p className={styles.ServiceTitle}>TECH AND CREATIVE SUPPORT</p>
+            <div className={styles.ServicePoint}>
+            ▵  Slideshow preparation
+            </div>
+            <div className={styles.ServicePoint}>
+            ▵  Website (Squarespace) Maintenance
+            </div>
+            <div className={styles.ServicePoint}>
+            ▵  Lead Pages and Sales Pages Creation
+            </div>
+            <div className={styles.ServicePoint}>
+            ▵  Webinar Setup 
+            </div>
+            <div className={styles.ServicePoint}>
+            ▵  Online Booking & Scheduling System 
+            </div>
+            <div className={styles.ServicePoint}>
+            ▵  Email Marketing 
+            </div>
+
+          </div>
+        </ServiceBanner>
       </ContentBanner>
       <ContentBanner color={"rgb(211,140,126)"}></ContentBanner>
     </>

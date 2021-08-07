@@ -9,11 +9,7 @@ const ServiceBanner = (props) => {
   }
   return (
     <div className={styles.ServiceBanner} style={style}>
-      <div><img src={props.image} alt={props.altText} /></div>
-      <div className={styles.ServiceContent}>
-        <div className={styles.ServiceTitle}>{props.title}</div>
-        <div className={styles.ServiceTitle}>{props.content}</div>
-      </div>
+      {props.children}
     </div>
   );
 };

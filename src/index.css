@@ -13,7 +13,7 @@
 
 :root {
   --primary: white;
-  --scaffold: 0px solid pink;
+  --scaffold: 1px solid pink;
 }
 
 body {

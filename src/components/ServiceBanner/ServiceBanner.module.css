@@ -1,9 +1,12 @@
 .ServiceBanner {
     display: flex;
     flex-direction: row-reverse;
+    margin: 40px;
+    border: var(--scaffold);
 }
 
 .ServiceContent {
     display: flex;
     flex-direction: column;
+    border: var(--scaffold);
 }
