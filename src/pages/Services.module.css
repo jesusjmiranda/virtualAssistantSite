@@ -2,7 +2,7 @@
     font-size: 80px;
     font-family: 'Karla', sans-serif;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .firstBannerText {
@@ -16,5 +16,6 @@
     font-size: 70px;
     font-family: 'WindSong', cursive;
     color: white;
+    margin-top: 20px;
     margin-bottom: 40px;
 }

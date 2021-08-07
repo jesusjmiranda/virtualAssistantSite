@@ -1,19 +1,21 @@
-import styles from './ServiceBanner.module.css'
+import styles from "./ServiceBanner.module.css";
 
 const ServiceBanner = (props) => {
-    return (
-        <div className={styles.ServiceBanner}>
-            <img src={props.image} alt={props.altText}/>
-            <div className={styles.ServiceContent}>
-                <div className={styles.ServiceTitle}>
-                    Title
-                </div>
-                <div className={styles.ServiceTitle}>
-                    Content for the entire ServiceBanner component
-                </div>
-            </div>
-        </div>
-    )
-}
+  let style = {
+    flexDirection: "row",
+  }; 
+  if(props.flip) {
+      style.flexDirection = "row-reverse"
+  }
+  return (
+    <div className={styles.ServiceBanner} style={style}>
+      <div><img src={props.image} alt={props.altText} /></div>
+      <div className={styles.ServiceContent}>
+        <div className={styles.ServiceTitle}>{props.title}</div>
+        <div className={styles.ServiceTitle}>{props.content}</div>
+      </div>
+    </div>
+  );
+};
 
-export default ServiceBanner
+export default ServiceBanner;

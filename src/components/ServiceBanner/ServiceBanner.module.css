@@ -1,11 +1,9 @@
 .ServiceBanner {
     display: flex;
-}
-
-.ServiceImage {
-    
+    flex-direction: row-reverse;
 }
 
 .ServiceContent {
-
+    display: flex;
+    flex-direction: column;
 }
