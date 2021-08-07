@@ -3,8 +3,15 @@ import styles from './ServiceBanner.module.css'
 const ServiceBanner = (props) => {
     return (
         <div className={styles.ServiceBanner}>
-            <div className={styles.ServiceImage}>ServiceImageHere</div>
-            <div className={styles.ServiceContent}>This will be the content</div>
+            <img src={props.image} alt={props.altText}/>
+            <div className={styles.ServiceContent}>
+                <div className={styles.ServiceTitle}>
+                    Title
+                </div>
+                <div className={styles.ServiceTitle}>
+                    Content for the entire ServiceBanner component
+                </div>
+            </div>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import MenuTitle from "./MenuTitle/MenuTitle";
 import MenuItem from "./MenuItem/MenuItem";
 
 import BurgerMenu from "../BurgerMenu/BurgerMenu"
-import MainLogo from '../../mamisLogoFixedSize.jpg'
+import MainLogo from '../../SiteImages/mamisLogoFixedSize.jpg'
 import IconComponent from '../IconComponent/IconComponent'
 
 import styles from "./Navbar.module.css";
