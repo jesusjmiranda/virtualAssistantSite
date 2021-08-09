@@ -57,7 +57,40 @@
 }
 
 .PricingTitle {
+    font-size: 80px;
     font-family: 'Karla', sans-serif;
     color: white;
-    font-size: 49px;
+    margin-bottom: 20px;
+    border: var(--scaffold);
+}
+
+.LargeContainer {
+    display: flex;
+}
+
+.SmallContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+.SmallContainerContent {
+    margin: 20px;
+    width: 265px;
+    font-family: 'Karla', sans-serif;
+    font-size: 23px;
+}
+
+.SmallContainerTitle {
+    font-family: 'Karla', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width: 866px) {
+    .LargeContainer {
+        flex-direction: column;
+    }
 }
