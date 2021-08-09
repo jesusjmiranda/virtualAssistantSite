@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import MenuTitle from "./MenuTitle/MenuTitle";
 import MenuItem from "./MenuItem/MenuItem";
+import MobileMenuItem from "./MobileMenuItem/MobileMenuItem";
 
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import MainLogo from "../../SiteImages/mamisLogoFixedSize.jpg";
@@ -36,10 +38,10 @@ const Navbar = () => {
   return (
     <>
       <nav className={mobileNavStyle} style={{zIndex: zIndex}}>
-        <MenuItem text={"Home"} path={"/"} onClick={closeMenuHandler} />
-        <MenuItem text={"About"} path={"/about"} onClick={closeMenuHandler} />
-        <MenuItem text={"Services"} path={"/services"} onClick={closeMenuHandler} />
-        <MenuItem text={"Contact"} path={"/contact"} onClick={closeMenuHandler} />
+        <MobileMenuItem text={"Home"} path={"/"} onClick={closeMenuHandler} />
+        <MobileMenuItem text={"About"} path={"/about"} onClick={closeMenuHandler} />
+        <MobileMenuItem text={"Services"} path={"/services"} onClick={closeMenuHandler} />
+        <MobileMenuItem text={"Contact"} path={"/contact"} onClick={closeMenuHandler} />
       </nav>
       <nav className={partialNavStyle} style={{zIndex: zIndex}}> 
       <div className={'xBox'} onClick={closeMenuHandler}>X</div>
@@ -55,7 +57,7 @@ const Navbar = () => {
         <BurgerMenu onClick={toggleMenuHandler} />
       </nav>
       <IconComponent imageSource={MainLogo} />
-      <div className={'mobileTitle'}>Secretarias a Distancia</div>
+      <NavLink className={'mobileTitle'} to={"/"}>Secretarias a Distancia</NavLink>
     </>
   );
 };

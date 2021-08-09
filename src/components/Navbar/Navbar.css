@@ -23,6 +23,8 @@
 .mobileTitle {
   display: none;
   height: 100px;
+  text-decoration: none;
+  color: black;
 }
 
 .MobileNavbar {
@@ -38,6 +40,7 @@
   left: -100%;
   transition: 850ms;
   padding-left: 38%;
+  border: var(--scaffold)
 }
 
 .MobileRight {

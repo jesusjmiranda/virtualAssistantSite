@@ -1,0 +1,19 @@
+.MobileMenuItem {
+    height: 50px;
+    max-height: 60px;
+    width: 90px;
+    max-width: 90px;
+    line-height: 60px;
+    text-decoration: white;
+    color: inherit;
+    padding: 5px;
+    margin: 15px;
+    border: var(--scaffold);
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 35px;
+    border: var(--scaffold)
+}
+
+.active {
+    border-bottom: 1px solid black;
+}
