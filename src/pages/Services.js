@@ -11,11 +11,14 @@ const Services = () => {
     <>
       <ContentBanner color={"rgb(211,140,126)"}>
         <div className={styles.firstBannerTextTitle}>Services</div>
+
+        <Spacer color={"rgb(193,197,163)"} width={180} marginTop={30}/>
+
         <div className={styles.firstBannerText}>TAKE BACK YOUR TIME TO</div>
         <div className={styles.firstBannerText}>FOCUS ON WHAT MATTERS</div>
         <div className={styles.firstBannerTextTwo}>the most</div>
 
-        <Spacer color={"rgb(246,195,168)"} width={180} />
+        <Spacer color={"rgb(246,195,168)"} width={180} marginTop={10}/>
       </ContentBanner>
       <ContentBanner color={"white"}>
         <ServiceBanner>
@@ -90,7 +93,16 @@ const Services = () => {
           </div>
         </ServiceBanner>
       </ContentBanner>
-      <ContentBanner color={"rgb(211,140,126)"}></ContentBanner>
+      <ContentBanner color={"rgb(211,140,126)"}>
+        <div className={styles.PricingTitle}>Pricing</div>
+        <Spacer color={'rgb(176,123,94)'} width={200} marginTop={40} />
+        <div className={styles.SmallContainer}>
+          <p>Hourly rate: CAD$35 + HST</p>
+          <p>Custom packages available</p>
+        </div>
+        <div className={styles.LargeContainer}>
+        </div>
+      </ContentBanner>
     </>
   );
 };

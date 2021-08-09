@@ -56,7 +56,8 @@
     margin-left: 20px;
 }
 
-@media (max-width: 864px) {
-
+.PricingTitle {
+    font-family: 'Karla', sans-serif;
+    color: white;
+    font-size: 49px;
 }
-
