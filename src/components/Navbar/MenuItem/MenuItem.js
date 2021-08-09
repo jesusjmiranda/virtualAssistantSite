@@ -9,6 +9,7 @@ const MenuItem = (props) => {
       activeClassName={styles.active}
       className={styles.menuItem}
       to={props.path}
+      onClick={props.onClick}
       exact
     >
       {props.text}

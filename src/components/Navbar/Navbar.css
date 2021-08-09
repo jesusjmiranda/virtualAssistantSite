@@ -1,64 +1,111 @@
 .navbar {
-    background-color: white;
-    color: black;
-    height: 100px;
-    display: flex;
-    width: 80vw;
-    min-width: 804px;
-    max-width: 1250px;
-    justify-content: space-between;
-    justify-self: center;
-    align-self: center;
-    align-items: center;
-    border: var(--scaffold);
-    margin-top: 15px;
+  background-color: white;
+  color: black;
+  height: 100px;
+  display: flex;
+  width: 80vw;
+  min-width: 804px;
+  max-width: 1250px;
+  justify-content: space-between;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  border: var(--scaffold);
+  margin-top: 15px;
 }
 
-.menuItemContainer{
-    height: 60px;
-    margin-right: 40px;
-    border: var(--scaffold);
+.menuItemContainer {
+  height: 60px;
+  margin-right: 40px;
+  border: var(--scaffold);
 }
 
 .mobileTitle {
-    display: none;
-    height: 100px;
+  display: none;
+  height: 100px;
 }
 
 .MobileNavbar {
-    background-color: white;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    transition: 850ms;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  padding-left: 38%;
+}
+
+.MobileRight {
+  background-color: white;
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: -20%;
+  transition: 600ms;
 }
 
 .MobileNavOpen {
-    left: 0;
+  left: -20%;
+}
+
+.zUp {
     z-index: 10;
 }
 
-@media (max-width: 620px) {
-    .menuItemContainer {
-        display: none;
-    }
-    .navbar {
-        margin-left: 10px;
-        width: 100%;
-        min-width: 90%;
-        max-width: 95%;
-    }
-    .mobileTitle {
-        font-family: 'Lovers Quarrel', cursive;
-        font-size: 65px;
-        display: block;
-        bottom: 40px;
-    }
+.PartialNavOpen {
+  right: 0;
 }
 
+.xBox {
+    font-size: 40px;
+    top: 15px;
+    right: 30px;
+    font-family: "Lovers Quarrel", cursive;
+    cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .menuItemContainer {
+    display: none;
+  }
+  .navbar {
+    margin-left: 10px;
+    width: 100%;
+    min-width: 90%;
+    max-width: 95%;
+  }
+  .mobileTitle {
+    font-family: "Lovers Quarrel", cursive;
+    font-size: 65px;
+    display: block;
+    bottom: 40px;
+  }
+}
+
+@media (min-width: 620px) {
+  .MobileNavbar {
+    display: none;
+  }
+
+  .MobileRight {
+    display: none;
+  }
+
+  .MobileNavOpen {
+    display: none;
+  }
+
+  .PartialNavOpen {
+    display: none;
+  }
+}
