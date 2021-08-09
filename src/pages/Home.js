@@ -78,7 +78,7 @@ const Home = () => {
           />
           <ProvidedService
             icon={<BsFillPeopleFill />}
-            title={"SOCIAL MEDIA SUPPORT"}
+            title={"Customer Support"}
             details={
               "Let’s set up a strategy so you can show up consistently and authentically on the social media platforms with the biggest impact, increasing your visibility and engagement."
             }

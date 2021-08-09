@@ -1,14 +1,19 @@
 import styles from "./ServiceBanner.module.css";
 
 const ServiceBanner = (props) => {
+  /* 
   let style = {
     flexDirection: "row",
   }; 
+ 
+  */
+  let style = styles.ServiceBanner
   if(props.flip) {
-      style.flexDirection = "row-reverse"
+    style = styles.FlippedBanner
   }
+
   return (
-    <div className={styles.ServiceBanner} style={style}>
+    <div className={style}>
       {props.children}
     </div>
   );

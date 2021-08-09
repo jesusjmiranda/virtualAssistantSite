@@ -5,8 +5,28 @@
     border: var(--scaffold);
 }
 
+.FlippedBanner {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    border: var(--scaffold);
+}
+
 .ServiceContent {
     display: flex;
     flex-direction: column;
     border: var(--scaffold);
+}
+
+@media (max-width: 864px) {
+    .ServiceBanner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .FlippedBanner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

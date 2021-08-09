@@ -37,6 +37,9 @@ const Services = () => {
             </div>
           </div>
         </ServiceBanner>
+
+        <Spacer color={'rgb(168,194,199)'} width={200} />
+
         <ServiceBanner flip={true}>
           <img
             src={secondImage}
@@ -59,6 +62,9 @@ const Services = () => {
             </div>
           </div>
         </ServiceBanner>
+
+        <Spacer color={'rgb(168,194,199)'} width={200} style={{marginTop: '200px'}}/>
+        
         <ServiceBanner >
           <img
             src={thirdImage}
