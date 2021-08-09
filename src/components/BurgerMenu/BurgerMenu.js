@@ -1,11 +1,11 @@
-import styles from './BurgerMenu.module.css'
+import  './BurgerMenu.css'
 
 const BurgerMenu = (props) => {
     
     return (
-        <div className={styles.menuBtn} onClick={props.onClick}>
-            <div className={styles.menuBtnBurger}>
-
+        <div className={'menuBtn'} onClick={props.onClick}>
+            <div className={'menuBtnBurger'}>
+                
             </div>
         </div>
     )
