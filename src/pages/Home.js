@@ -2,6 +2,7 @@ import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
 import { GoDeviceDesktop } from "react-icons/go";
 import { GoRepo } from "react-icons/go";
 import { BsFillPeopleFill } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 import Button from "../components/UI/Button/Button";
 import styles from "./Home.module.css";
 import Spacer from "../components/UI/Spacer/Spacer";
@@ -17,7 +18,7 @@ const Home = () => {
 
         <Spacer color={"rgb(136, 76, 27)"} width={80} />
 
-        <Button text={"WORK WITH ME"} />
+        <NavLink to={'/services'} style={{textDecoration:'none'}}> <Button text={"WORK WITH ME"} color={'rgba(131,134,176,0.5)'}/> </NavLink>
       </ContentBanner>
 
       <ContentBanner color={"white"}>
@@ -78,14 +79,14 @@ const Home = () => {
           />
           <ProvidedService
             icon={<BsFillPeopleFill />}
-            title={"Customer Support"}
+            title={"CUSTOMER SUPPORT"}
             details={
               "Let’s set up a strategy so you can show up consistently and authentically on the social media platforms with the biggest impact, increasing your visibility and engagement."
             }
           />
           <ProvidedService
             icon={<GoDeviceDesktop />}
-            title={"TECH & CREATIVE SUPPORT"}
+            title={"TRANSLATION SERVICES"}
             details={
               "Ready to look into automating your processes? Don’t have a clue how to make your graphics and documents look good and appealing? Or maybe you have an amazing idea for your next program/presentation but you’re having trouble with the technology you need to bring your vision to life? Let me help! "
             }

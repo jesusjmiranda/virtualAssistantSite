@@ -1,14 +1,14 @@
 .Button {
     font-family: 'Abel', sans-serif;
     font-size: 20px;
-    background-color: rgb(131,134,176);
     padding: 10px;
     margin: 10px;
     border-radius: 3px;
     color: white;
     margin-bottom: 26px;
+    background-color: rgba(145,142,175, .7)
 }
 
 .Button:hover {
-    background-color: white;
+    background-color: rgba(145,142,175, 10)
 }

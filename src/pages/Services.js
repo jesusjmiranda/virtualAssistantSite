@@ -19,7 +19,6 @@ const Services = () => {
         <div className={styles.firstBannerTextTwo}>the most</div>
 
         <Spacer color={"rgb(246,195,168)"} width={180} marginTop={10} />
-
       </ContentBanner>
       <ContentBanner color={"white"}>
         <ServiceBanner>
@@ -38,42 +37,15 @@ const Services = () => {
               <div className={styles.ServicePoint}>▵ PDF/Document Creation</div>
               <div className={styles.ServicePoint}>▵ Calendar Management</div>
               <div className={styles.ServicePoint}>▵ Client Onboarding</div>
+              <div className={styles.ServicePoint}>▵ Administrative Tasks</div>
+              <div className={styles.ServicePoint}>▵ Customer Service</div>
             </div>
           </div>
         </ServiceBanner>
 
-        <Spacer color={"rgb(168,194,199)"} width={200} marginTop={45}/>
+        <Spacer color={"rgb(168,194,199)"} width={200} marginTop={45} />
 
         <ServiceBanner flip={true}>
-          <img
-            src={secondImage}
-            className={styles.Image}
-            alt={"Clean simple wooden desk"}
-          ></img>
-          <div className={styles.ServiceContent}>
-            <p className={styles.ServiceTitle}>SOCIAL MEDIA SUPPORT</p>
-            <div className={styles.ServicePoints}>
-              <div className={styles.ServicePoint}>▵ Graphics Creation</div>
-              <div className={styles.ServicePoint}>▵ Pre-Scheduling Posts</div>
-              <div className={styles.ServicePoint}>▵ Calendar management</div>
-              <div className={styles.ServicePoint}>
-                ▵ Posting at optimal times
-              </div>
-              <div className={styles.ServicePoint}>
-                ▵ Optimizing posts for success
-              </div>
-              <div className={styles.ServicePoint}>▵ Monitoring/Tracking</div>
-            </div>
-          </div>
-        </ServiceBanner>
-
-        <Spacer
-          color={"rgb(168,194,199)"}
-          width={200}
-          marginTop={45}
-        />
-
-        <ServiceBanner>
           <img
             src={thirdImage}
             className={styles.Image}
@@ -94,6 +66,31 @@ const Services = () => {
                 ▵ Online Booking & Scheduling System
               </div>
               <div className={styles.ServicePoint}>▵ Email Marketing</div>
+            </div>
+          </div>
+        </ServiceBanner>
+
+        <Spacer color={"rgb(168,194,199)"} width={200} marginTop={45} />
+
+        <ServiceBanner>
+          <img
+            src={secondImage}
+            className={styles.Image}
+            alt={"Clean simple wooden desk"}
+          ></img>
+          <div className={styles.ServiceContent}>
+            <p className={styles.ServiceTitle}>TRANSLATION SERVICES</p>
+            <div className={styles.ServicePoints}>
+              <div className={styles.ServicePoint}>▵ Graphics Creation</div>
+              <div className={styles.ServicePoint}>▵ Pre-Scheduling Posts</div>
+              <div className={styles.ServicePoint}>▵ Calendar management</div>
+              <div className={styles.ServicePoint}>
+                ▵ Posting at optimal times
+              </div>
+              <div className={styles.ServicePoint}>
+                ▵ Optimizing posts for success
+              </div>
+              <div className={styles.ServicePoint}>▵ Monitoring/Tracking</div>
             </div>
           </div>
         </ServiceBanner>
@@ -124,6 +121,11 @@ const Services = () => {
               20 hours of work Customization of services Weekly Task Updates
             </div>
           </div>
+        </div>
+
+        <div className={styles.Notary}>
+          <div className={styles.SmallContainerTitle}>Notary Public</div>
+          <div className={styles.SmallContainerContent}>Available to handle any procedure that requires a certified notary public in SC.  </div>
         </div>
       </ContentBanner>
     </>
