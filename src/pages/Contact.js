@@ -3,9 +3,11 @@ import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
 const Contact = () => {
   return (
     <div>
-      <ContentBanner color={"rgb(211,140,126)"}></ContentBanner>
-      <ContentBanner color={"white"}></ContentBanner>
-      <ContentBanner color={"rgb(211,140,126)"}></ContentBanner>
+      <ContentBanner color={"rgb(211,140,126)"}>
+        <div className={"construction"}>
+          (: This page is under construction :)
+        </div>
+      </ContentBanner>
     </div>
   );
 };

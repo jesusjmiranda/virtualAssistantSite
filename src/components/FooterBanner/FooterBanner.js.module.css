@@ -29,7 +29,8 @@
 
 .Trademark {
     border: var(--scaffold);
-    margin: 15px;
+    margin: 25px;
+    margin-bottom: 40px;
 }
 
 .Links {
