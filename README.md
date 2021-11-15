@@ -3,6 +3,10 @@
 This React application serves as the web front to a virtual secratary business. The application features a contact page
 that is managed with firestore and a translation feature that I built with Context and translated myself. 
 
+## Design
+
+I designed the site layout and colorscheme and used Photoshop to obtain the company logo which was only available on an business card. 
+
 ## Available Scripts
 
 In the project directory, you can run:
