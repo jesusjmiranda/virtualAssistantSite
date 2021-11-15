@@ -1,9 +1,9 @@
-import { NavLink } from 'react-router-dom'
-import styles from './MobileMenuItem.module.css'
+import { NavLink } from "react-router-dom";
+import styles from "./MobileMenuItem.module.css";
 
 const MobileMenuItem = (props) => {
-    return  (
-        <NavLink
+  return (
+    <NavLink
       activeClassName={styles.active}
       className={styles.MobileMenuItem}
       to={props.path}
@@ -12,7 +12,7 @@ const MobileMenuItem = (props) => {
     >
       {props.text}
     </NavLink>
-    )
-}
+  );
+};
 
-export default MobileMenuItem
+export default MobileMenuItem;

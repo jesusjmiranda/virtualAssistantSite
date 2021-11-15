@@ -21,43 +21,71 @@ const Navbar = () => {
     setMenuOpen((prevState) => (prevState = !prevState));
   };
 
-  let mobileNavStyle = 'MobileNavbar';
-  let partialNavStyle = 'MobileRight';
+  let mobileNavStyle = "MobileNavbar";
+  let partialNavStyle = "MobileRight";
   let zIndex = 0;
 
   if (menuOpen) {
-    mobileNavStyle = mobileNavStyle +' MobileNavOpen';
-    partialNavStyle = partialNavStyle + ' PartialNavOpen';
+    mobileNavStyle = mobileNavStyle + " MobileNavOpen";
+    partialNavStyle = partialNavStyle + " PartialNavOpen";
     zIndex = 10;
   }
 
   const closeMenuHandler = () => {
-    setMenuOpen(false)
-  }
+    setMenuOpen(false);
+  };
 
   return (
     <>
-      <nav className={mobileNavStyle} style={{zIndex: zIndex}}>
+      <nav className={mobileNavStyle} style={{ zIndex: zIndex }}>
         <MobileMenuItem text={"Home"} path={"/"} onClick={closeMenuHandler} />
-        <MobileMenuItem text={"About"} path={"/about"} onClick={closeMenuHandler} />
-        <MobileMenuItem text={"Services"} path={"/services"} onClick={closeMenuHandler} />
-        <MobileMenuItem text={"Contact"} path={"/contact"} onClick={closeMenuHandler} />
+        <MobileMenuItem
+          text={"About"}
+          path={"/about"}
+          onClick={closeMenuHandler}
+        />
+        <MobileMenuItem
+          text={"Services"}
+          path={"/services"}
+          onClick={closeMenuHandler}
+        />
+        <MobileMenuItem
+          text={"Contact"}
+          path={"/contact"}
+          onClick={closeMenuHandler}
+        />
       </nav>
-      <nav className={partialNavStyle} style={{zIndex: zIndex}}> 
-      <div className={'xBox'} onClick={closeMenuHandler}>X</div>
+      <nav className={partialNavStyle} style={{ zIndex: zIndex }}>
+        <div className={"xBox"} onClick={closeMenuHandler}>
+          X
+        </div>
       </nav>
-      <nav className={'navbar'}>
-        <MenuTitle text={"Secretarias a Distancia"} onClick={closeMenuHandler} />
-        <div className={'menuItemContainer'}>
+      <nav className={"navbar"}>
+        <MenuTitle
+          text={"Secretarias a Distancia"}
+          onClick={closeMenuHandler}
+        />
+        <div className={"menuItemContainer"}>
           <MenuItem text={"Home"} path={"/"} onClick={closeMenuHandler} />
           <MenuItem text={"About"} path={"/about"} onClick={closeMenuHandler} />
-          <MenuItem text={"Services"} path={"/services"} onClick={closeMenuHandler} />
-          <MenuItem text={"Contact"} path={"/contact"} onClick={closeMenuHandler} />
+          <MenuItem
+            text={"Services"}
+            path={"/services"}
+            onCl
+            ick={closeMenuHandler}
+          />
+          <MenuItem
+            text={"Contact"}
+            path={"/contact"}
+            onClick={closeMenuHandler}
+          />
         </div>
         <BurgerMenu onClick={toggleMenuHandler} />
       </nav>
       <IconComponent imageSource={MainLogo} />
-      <NavLink className={'mobileTitle'} to={"/"}>Secretarias a Distancia</NavLink>
+      <NavLink className={"mobileTitle"} to={"/"}>
+        Secretarias a Distancia
+      </NavLink>
     </>
   );
 };
