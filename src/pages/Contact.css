@@ -1,7 +1,92 @@
-.construction {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-family: 'Abel', sans-serif;
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(40, 44, 52,1)'/%3E%3Cpath d='M-20 16h2.33v8h-2.33zM 5 16h2.33v8h-2.33zM 25 16h2.33v8h-2.33z ' fill='rgba(26, 32, 44,1)'/%3E%3Cpath d='M-5 19.5h2.33v1h-2.33zM 15 19.5h2.33v1h-2.33zM 35 19.5h2.33v1h-2.33z ' fill='rgba(108, 136, 129,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  }
+  
+  .contact-bannerTitle {
+    font-size: 30px;
     color: white;
-    font-size: 40px;
-}
+  }
+  
+  .contact-introText {
+    background-color: var(--primary);
+    color: white;
+    max-width: 700px;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+  
+  .contact-label {
+    font-size: 20px;
+  }
+  a {
+    color: var(--secondary);
+    text-decoration: none;
+  }
+  a:active {
+    color: var(--secondary)
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: var(--scaffold);
+    justify-self: flex-start;
+    align-self: center;
+    width: 450px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  .message {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #6c8881;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #6c9981;
+  }
+  
+  .message {
+    height: 180px;
+  }
+  
+  @media (max-width: 880px) {
+    .contact-form {
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .contact-form {
+      width: 250px;
+    }
+  }
+  /* add contact form*/
+  /* add useState*/
+  /* add onChange listener and set values based on input*/
+  /* add form onSubmit handler with firebase db with then and catch*/
+  /* add reset values for form after submit */
+  /* init firestore db */
+  
