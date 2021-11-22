@@ -1,0 +1,10 @@
+.ContentBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: var(--scaffold);
+    min-width: 100%;
+    position: relative;
+    padding: 20px;
+}
