@@ -1,23 +1,41 @@
-import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
-import './Contact.css'
+import "./Contact.css";
 import { useState } from "react";
+import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
+import firebase from "../firebase.js";
+import { serverTimestamp } from "@firebase/firestore";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const db = firebase.firestore();
+
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log("It worked!")
+    //read field for later querying
+    e.preventDefault();
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        message: message,
+        timestamp: serverTimestamp(),
+        read: false,
+      })
+      .then(() => {
+        alert("Message has been submitted");
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
+
+    setName("");
+    setEmail("");
+    setMessage("");
   };
   return (
     <div className={"contact"}>
-      <ContentBanner
-        color={"#D38C7E"}
-        marginTop={"5px"}
-        marginBottom={"25px"}
-      >
+      <ContentBanner color={"#D38C7E"} marginTop={"5px"} marginBottom={"25px"}>
         <form className="contact-form" onSubmit={handleSubmit}>
           <label className={"contact-label"}>Name</label>
           <input
@@ -46,7 +64,7 @@ const Contact = () => {
               setMessage(e.target.value);
             }}
           />
-          <input type="submit" value="Send" className={'Submit-Button'} />
+          <input type="submit" value="Send" className={"Submit-Button"} />
         </form>
       </ContentBanner>
     </div>
