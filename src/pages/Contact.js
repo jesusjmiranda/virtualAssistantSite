@@ -7,7 +7,10 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log("It worked!")
+  };
   return (
     <div className={"contact"}>
       <ContentBanner
@@ -43,7 +46,7 @@ const Contact = () => {
               setMessage(e.target.value);
             }}
           />
-          <input type="submit" value="Send" />
+          <input type="submit" value="Send" className={'Submit-Button'} />
         </form>
       </ContentBanner>
     </div>
