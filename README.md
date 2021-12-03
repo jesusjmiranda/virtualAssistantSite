@@ -5,7 +5,7 @@ that is managed with firestore and a translation feature that I built with Conte
 
 ## Design
 
-I designed the site layout and colorscheme and used Photoshop to obtain the company logo which was only available on an business card. 
+I designed the site layout and colorscheme and used Photoshop to obtain the company logo which was previously only available on a business card. 
 
 ## Available Scripts
 
