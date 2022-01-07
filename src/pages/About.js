@@ -12,6 +12,8 @@ const About = () => {
         <div className={"firstBannerText"}>A PLETHORA OF EXPERIENCE</div>
         <div className={"firstBannerText"}>FOR YOUR BUSINESS'</div>
         <div className={"firstBannerTextTwo"}>support</div>
+        <Spacer color={"#F6C3A8"} width={180} marginTop={30} />
+
       </ContentBanner>
     </div>
   );
