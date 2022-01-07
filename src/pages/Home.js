@@ -14,18 +14,21 @@ const Home = () => {
       <ContentBanner className={styles.bannerOne} color={"rgb(211,140,126)"}>
         <p className={styles.simpleText}>Virtual Business Support for the</p>
         <p className={styles.mediumText}>HEALTH & WELLNESS</p>
-        <p className={styles.complexText}>entrepeneur</p>
+        <p className={styles.complexText}>entrepreneur</p>
 
         <Spacer color={"rgb(136, 76, 27)"} width={80} />
 
-        <NavLink to={'/services'} style={{textDecoration:'none'}}> <Button text={"WORK WITH ME"} color={'rgba(131,134,176,0.5)'}/> </NavLink>
+        <NavLink to={"/services"} style={{ textDecoration: "none" }}>
+          {" "}
+          <Button text={"WORK WITH US"} color={"rgba(131,134,176,0.5)"} />{" "}
+        </NavLink>
       </ContentBanner>
 
       <ContentBanner color={"white"}>
         <p className={styles.firstParagraph}>
-          I’m Nivia. I help{" "}
+          We help{" "}
           <span className={styles.italicizedText}>
-            heart-centered entrepreneurs in health and wellness{" "}
+            success oriented entrepreneurs focused on results{" "}
           </span>
           with the backend of their business so they can focus on what's most
           important:{" "}

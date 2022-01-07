@@ -56,9 +56,6 @@ const Services = () => {
             <div className={styles.ServicePoints}>
               <div className={styles.ServicePoint}>▵ Slideshow preparation</div>
               <div className={styles.ServicePoint}>
-                ▵ Website (Squarespace) Maintenance
-              </div>
-              <div className={styles.ServicePoint}>
                 ▵ Lead Pages and Sales Pages Creation
               </div>
               <div className={styles.ServicePoint}>▵ Webinar Setup</div>
@@ -99,7 +96,7 @@ const Services = () => {
         <div className={styles.PricingTitle}>Pricing</div>
         <Spacer color={"rgb(193,197,163)"} width={200} marginTop={18} />
         <div className={styles.SmallContainer}>
-          <p>Hourly rate: CAD$35 + HST</p>
+          <p>Hourly rate: $35</p>
           <p>Custom packages available</p>
         </div>
         <div className={styles.LargeContainer}>
