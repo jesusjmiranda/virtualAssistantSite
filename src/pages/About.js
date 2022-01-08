@@ -1,7 +1,6 @@
 import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
 import Spacer from "../components/UI/Spacer/Spacer";
-import aboutHeadshot from "../SiteImages/aboutHeadshot.png"
-import IconComponent from "../components/IconComponent/IconComponent";
+import aboutHeadshot from "../SiteImages/aboutHeadshot.png";
 
 import "./About.css";
 
@@ -16,10 +15,13 @@ const About = () => {
         <div className={"firstBannerText"}>FOR YOUR BUSINESS'</div>
         <div className={"firstBannerTextTwo"}>support</div>
         <Spacer color={"#F6C3A8"} width={180} marginTop={30} />
-
       </ContentBanner>
-
-      <IconComponent imageSource={aboutHeadshot} />
+      <ContentBanner color={"#FFF"}>
+        <img src={aboutHeadshot} alt="headshot" />
+      </ContentBanner>
+      <ContentBanner color={"rgb(237, 231, 229)"}>
+        
+      </ContentBanner>
     </div>
   );
 };
