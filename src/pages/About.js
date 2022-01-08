@@ -1,5 +1,8 @@
 import ContentBanner from "../components/UI/ContentBanner/ContentBanner";
 import Spacer from "../components/UI/Spacer/Spacer";
+import aboutHeadshot from "../SiteImages/aboutHeadshot.png"
+import IconComponent from "../components/IconComponent/IconComponent";
+
 import "./About.css";
 
 const About = () => {
@@ -15,6 +18,8 @@ const About = () => {
         <Spacer color={"#F6C3A8"} width={180} marginTop={30} />
 
       </ContentBanner>
+
+      <IconComponent imageSource={aboutHeadshot} />
     </div>
   );
 };
