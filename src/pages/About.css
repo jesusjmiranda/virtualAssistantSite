@@ -22,3 +22,17 @@
     margin-bottom: 30px;
     border: var(--scaffold);
 }
+.imageCropper {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .headshotImage {
+    width: 340px; /* you can use % */
+    height: auto;
+    right: 5px;
+    bottom: 10px;
+  }

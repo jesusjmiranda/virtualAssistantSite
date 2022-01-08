@@ -17,11 +17,12 @@ const About = () => {
         <Spacer color={"#F6C3A8"} width={180} marginTop={30} />
       </ContentBanner>
       <ContentBanner color={"#FFF"}>
-        <img src={aboutHeadshot} alt="headshot" />
+        <div class={"imageCropper"}>
+          {" "}
+          <img src={aboutHeadshot} alt="headshot" class="headshotImage" />
+        </div>
       </ContentBanner>
-      <ContentBanner color={"rgb(237, 231, 229)"}>
-        
-      </ContentBanner>
+      <ContentBanner color={"rgb(237, 231, 229)"}></ContentBanner>
     </div>
   );
 };
