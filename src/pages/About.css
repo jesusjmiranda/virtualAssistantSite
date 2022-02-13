@@ -9,7 +9,8 @@
 .firstBannerText {
     font-size: 40px;
     font-family: 'Karla', sans-serif;
-    color: white;
+    font-weight: 200px;
+    color: #617556;
     margin-bottom: 2px;
     border: var(--scaffold);
 }
@@ -17,10 +18,11 @@
 .firstBannerTextTwo {
     font-size: 70px;
     font-family: 'WindSong', cursive;
-    color: white;
+    color: #D66D5A;
     margin-top: 10px;
     margin-bottom: 30px;
     border: var(--scaffold);
+    bottom: 20px;
 }
 .imageCropper {
     width: 280px;
@@ -30,9 +32,32 @@
     border-radius: 50%;
   }
 
-  .headshotImage {
-    width: 340px; /* you can use % */
-    height: auto;
-    right: 5px;
-    bottom: 10px;
-  }
+.headshotImage {
+  width: 340px; /* you can use % */
+  height: auto;
+  right: 5px;
+  bottom: 10px;
+}
+
+#experience {
+    font-size: 24px;
+    margin: 0px 0px 20px 0px;
+}
+
+.points {
+    color: #617556;
+    font-size: 25px;
+    bottom: 5px;
+}
+
+#aboutPoints {
+    font-size: 25px;
+}
+
+.aboutPoints { 
+    display: flex;
+}
+
+.pointGroup {
+    margin: 0px 20px;
+}
